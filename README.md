@@ -101,6 +101,7 @@ Now we are going to attach to our vm and the debug the kernel, we will also use 
 13. cd output/build/linux-<version>
 14. gdb ./vmlinux
 15. target remote :1234
+
 And now you got a kernel debugging session. 
 
 **DONE!!!**
