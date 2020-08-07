@@ -6,7 +6,6 @@ Buildroot supply all the toolchain which needed for automate the process of comp
 Buildroot was created for creating linux embedded/minimal systmes.
 However, if your purpose is developing or debugging linux kernel its really good solution.
 
-
 First, Clone buildroot repository (latest version):
 
 1. cd ~/workspace
@@ -36,7 +35,7 @@ If you want to tell buildroot to download and compile antoher version of linux k
 
 # Config linux kernel
 Now we are going to configure linux kernel in order to compile it with debug symbols.
-Before opening the menuconfig it will trigger Buildroot linux kernel source code.
+Before opening the menuconfig it will trigger buildroot to download linux kernel source code.
 
 6. make linux-menuconfig
 
@@ -46,5 +45,11 @@ Before opening the menuconfig it will trigger Buildroot linux kernel source code
 
 # Compile linux kernel and rootfs
 Now lets compile everything:
+
 7. make
 
+Improtant files:
+
+* output/build/linux contains the downloaded kernel source code
+* output/images/bzImage is the built kernel
+* output/images/rootfs.ext4 is the built rootfs
