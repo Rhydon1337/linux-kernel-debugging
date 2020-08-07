@@ -87,6 +87,7 @@ ssh -p 5555 root@localhost
 
 ## Take a snapshot
 We will switch to qemu console in order to take the snapshot 
+
 10. press Ctrl+Alt+2
 11. savevm <snapshot_name>
 
