@@ -12,13 +12,11 @@ First, Clone buildroot repository (latest version):
 2. git clone https://github.com/buildroot/buildroot.git
 3. cd buildroot
 
-# Generate buildroot default config
-4. make qemu_x86_64_defconfig
-
 # Config buildroot
 Now we need to configure buildroot in order to build every packages with debug symbols.
 We also will need to ssh to the vm, then we will include in our rootfs openssh.
 
+4. make qemu_x86_64_defconfig // Generate buildroot default config
 5. make menuconfig
 
 * In Build options, toggle “build packages with debugging symbols”
