@@ -92,8 +92,7 @@ We will switch to qemu console in order to take the snapshot
 
 If you want to launch the vm from a snapshot:
 
-12. sudo qemu-system-x86_64 -enable-kvm -cpu host -s -kernel bzImage  -m 2048 -hda rootfs.qcow2 -append "root=/dev/sda rw nokaslr" -net nic,model=virtio -net user,hostfwd=tcp::5555-:22 \
--loadvm <snapshot_name>
+12. sudo qemu-system-x86_64 -enable-kvm -cpu host -s -kernel bzImage  -m 2048 -hda rootfs.qcow2 -append "root=/dev/sda rw nokaslr" -net nic,model=virtio -net user,hostfwd=tcp::5555-:22 -loadvm <snapshot_name>
 
 ## Start the debugging session
 Now we are going to attach to our vm and the debug the kernel, we will also use our symbols to the kernel. 
