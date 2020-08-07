@@ -1,4 +1,4 @@
-# Linux-Kernel-Debugging
+# Linux Kernel Debugging
 How to create a setup for linux kernel debugging using buildroot and qemu
 
 We are going to compile linux kernel and rootfs using buildroot.
@@ -13,10 +13,10 @@ First, Clone buildroot repository (latest version):
 2. git clone https://github.com/buildroot/buildroot.git
 3. cd buildroot
 
-# Generate Buildroot default config
+# Generate buildroot default config
 4. make qemu_x86_64_defconfig
 
-# Config Buildroot
+# Config buildroot
 Now we need to configure buildroot in order to build every packages with debug symbols.
 We also will need to ssh to the vm, then we will include in our rootfs openssh.
 
