@@ -45,7 +45,7 @@ Before opening the menuconfig it will trigger buildroot to download linux kernel
 ## Compile linux kernel and rootfs
 Now lets compile everything:
 
-7. make
+7. make -j8
 
 Improtant files:
 
