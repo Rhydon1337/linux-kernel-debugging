@@ -1,5 +1,5 @@
 # Linux Kernel Debugging
-How to create a setup for linux kernel debugging using buildroot, qemu and gdb
+How to create a setup for linux kernel debugging using buildroot, qemu and gdb.
 
 # Part 1: Compile linux kernel and rootfs
 We are going to compile linux kernel and rootfs using buildroot.
@@ -86,7 +86,7 @@ Now you can open the terminal on the host and execute:
 ssh -p 5555 root@localhost
 
 ## Take a snapshot
-We will switch to qemu console in order to take the snapshot 
+We will switch to qemu console in order to take the snapshot. 
 
 10. press Ctrl+Alt+2
 11. savevm <snapshot_name>
