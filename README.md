@@ -98,7 +98,7 @@ If you want to launch the vm from a snapshot:
 ## Start the debugging session
 Now we are going to attach to our vm and the debug the kernel, we will also use our symbols to the kernel. 
 
-13. cd output/build/linux-<version>
+13. cd output/build/linux-{version}
 14. gdb ./vmlinux
 15. target remote :1234
 
