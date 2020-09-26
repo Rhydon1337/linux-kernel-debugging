@@ -3,7 +3,7 @@ How to create a setup for linux kernel debugging using buildroot, qemu and gdb.
 
 # Part 1: Compile linux kernel and rootfs
 We are going to compile linux kernel and rootfs using buildroot.
-Buildroot supplies all the toolchain which needed for automate the process of compiling linux kernel, rootfs and bootloader.
+Buildroot supplies all the toolchain which needed for automate the process of compiling linux kernel and rootfs.
 Buildroot was created for creating linux embedded/minimal systmes.
 However, if your purpose is developing or debugging linux kernel its really good solution.
 
@@ -74,7 +74,7 @@ Lets explain our command:
 * -s -> qemu will open a gdbserver on TCP port 1234
 * -kernel -> path to the compiled kernel image
 * -m -> amount of memory of the vm
-* -hda -> path to disk image in our case the rootfs (and bootloader) 
+* -hda -> path to the root filesystem image in our case the rootfs 
 * -append -> send command line arguments to the linux kernel
 * -net nic,model=virtio -> connect a network interface
 * -net user,hostfwd=tcp::5555-:22 -> in order to use ssh we will forward tcp traffic from host port 5555 to guest port 22
